@@ -14,57 +14,20 @@ Alle weiteren benoetigten Imports, z. B. `import pandas as pd` oder `import math
 
 ## Inhaltsverzeichnis
 
-- [Skripte](#skripte)
-- [Definitionen](#definitionen)
-  - [Datentypen](#datentypenpy)
-  - [Validierung](#validierungpy)
-  - [Lineare Algebra](#lineare-algebrapy)
-  - [Nichtlineare Gleichungen](#nichtlineare-gleichungenpy)
-  - [Ausgleichsrechnung](#ausgleichsrechnungpy)
-  - [Interpolation](#interpolationpy)
-  - [Integration](#integrationpy)
-  - [Differentialgleichungen und Plotting](#differentialgleichungenpy)
-  - [Fehleranalyse](#fehleranalysepy)
-  - [Analysis-Hilfen](#analysis-hilfenpy)
-  - [Daten und Tabellen](#daten-tabellenpy)
-  - [Physik-Beispiele](#physik-beispielepy)
+- [Datentypen](#datentypenpy)
+- [Validierung](#validierungpy)
+- [Lineare Algebra](#lineare-algebrapy)
+- [Nichtlineare Gleichungen](#nichtlineare-gleichungenpy)
+- [Ausgleichsrechnung](#ausgleichsrechnungpy)
+- [Interpolation](#interpolationpy)
+- [Integration](#integrationpy)
+- [Differentialgleichungen und Plotting](#differentialgleichungenpy)
+- [Fehleranalyse](#fehleranalysepy)
+- [Analysis-Hilfen](#analysis-hilfenpy)
+- [Daten und Tabellen](#daten-tabellenpy)
+- [Physik-Beispiele](#physik-beispielepy)
 
-## Skripte
-
-| Skript | Verwendung |
-|---|---|
-| [`a4_test.py`](a4_test.py) | Lokales Tests-/Experimentierskript. |
-| [`examples/demo_hm2_pruefungsaufgaben.py`](examples/demo_hm2_pruefungsaufgaben.py) | Demo-Skript mit Beispielaufrufen. |
-| [`FS2022/aufg_a1.py`](FS2022/aufg_a1.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2022/aufg_a2.py`](FS2022/aufg_a2.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2022/aufg_a3.py`](FS2022/aufg_a3.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2022/aufg_a4.py`](FS2022/aufg_a4.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2022/aufg_a5.py`](FS2022/aufg_a5.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2022/aufg_a6.py`](FS2022/aufg_a6.py) | Loesungsskript zu einer Code-Aufgabe aus FS2022. |
-| [`FS2025/aufg_a4.py`](FS2025/aufg_a4.py) | Beispiel-/Referenzloesung aus FS2025. |
-| [`FS2025/aufg_a5.py`](FS2025/aufg_a5.py) | Beispiel-/Referenzloesung aus FS2025. |
-| [`FS2025/aufg_a6.py`](FS2025/aufg_a6.py) | Beispiel-/Referenzloesung aus FS2025. |
-| [`hm2_all_in_one.py`](hm2_all_in_one.py) | Kanonische All-in-one-Datei; alle Links unten zeigen hierhin. |
-| [`hm2_toolbox/__init__.py`](hm2_toolbox/__init__.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/analysis_hilfen.py`](hm2_toolbox/analysis_hilfen.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/ausgleichsrechnung.py`](hm2_toolbox/ausgleichsrechnung.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/daten_tabellen.py`](hm2_toolbox/daten_tabellen.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/datentypen.py`](hm2_toolbox/datentypen.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/differentialgleichungen.py`](hm2_toolbox/differentialgleichungen.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/fehleranalyse.py`](hm2_toolbox/fehleranalyse.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/integration.py`](hm2_toolbox/integration.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/interpolation.py`](hm2_toolbox/interpolation.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/lineare_algebra.py`](hm2_toolbox/lineare_algebra.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/nichtlineare_gleichungen.py`](hm2_toolbox/nichtlineare_gleichungen.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/physik_beispiele.py`](hm2_toolbox/physik_beispiele.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`hm2_toolbox/validierung.py`](hm2_toolbox/validierung.py) | Legacy-Modul der urspruenglich aufgeteilten Toolbox. |
-| [`tests/test_smoke.py`](tests/test_smoke.py) | Smoke-Test-Skript. |
-
-## Definitionen
-
-Alle 200 Top-Level-Definitionen sind unten nach dem urspruenglichen logischen Skript gruppiert. Private Hilfsfunktionen sind als `Intern` markiert, bleiben aber verlinkt, weil sie im All-in-one-File sichtbar sind.
-
-### Datentypen
+## Datentypen
 <a id="datentypenpy"></a>
 
 Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
@@ -77,7 +40,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`QuadraturErgebnis`](hm2_all_in_one.py#L237) | `wert, methode, schrittweite, anzahl_intervalle, fehlergrenze, zusatzinfos` | Dataclass mit Dictionary- und Tabellenzugriff. | Wert, Methode, Schrittweite und Zusatzinfos gemeinsam zurueckgeben. | import pandas as pd<br>from dataclasses import asdict<br>from dataclasses import dataclass |
 | [`DglErgebnis`](hm2_all_in_one.py#L298) | `x_werte, y_werte, methode, schrittweite, ordnung, tabelle` | Dataclass mit Dictionary- und Tabellenzugriff. | x-Werte, y-Werte, Methode und Tabelle gemeinsam zurueckgeben. | import pandas as pd<br>from dataclasses import asdict<br>from dataclasses import dataclass<br>from typing import Any |
 
-### Validierung
+## Validierung
 <a id="validierungpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -96,7 +59,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`pruefe_gerade_anzahl_intervalle`](hm2_all_in_one.py#L561) | `anzahl_intervalle` | None | Summierte Simpson-Regel absichern. | import numbers |
 | [`ist_skalar`](hm2_all_in_one.py#L579) | `wert` | bool | Parameter wie Schrittweite oder Toleranz validieren. | - |
 
-### Lineare Algebra
+## Lineare Algebra
 <a id="lineare-algebrapy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -148,7 +111,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`loese_lgs_qr`](hm2_all_in_one.py#L1278) | `matrix_a, vektor_b` | np.ndarray | Loest A x=b ueber QR. | - |
 | [`loese_ausgleich_qr`](hm2_all_in_one.py#L1294) | `matrix_a, vektor_y` | np.ndarray | Loest ein lineares Ausgleichsproblem per QR. | - |
 
-### Nichtlineare Gleichungen
+## Nichtlineare Gleichungen
 <a id="nichtlineare-gleichungenpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -169,7 +132,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`nullstellenfehler_abschaetzen`](hm2_all_in_one.py#L1689) | `funktion, naeherung, epsilon` | dict | Schaetzt einen Nullstellenfehler ueber Vorzeichenwechsel ab. | - |
 | [`vorzeichenwechsel_pruefen`](hm2_all_in_one.py#L1710) | `funktion, links, rechts` | bool | Prueft einen Vorzeichenwechsel auf einem Intervall. | - |
 
-### Ausgleichsrechnung
+## Ausgleichsrechnung
 <a id="ausgleichsrechnungpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -194,7 +157,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`logistisches_modell`](hm2_all_in_one.py#L2101) | `x, parameter` | Rueckgabewert gemaess Beschreibung | Wertet das logistische Modell aus. | - |
 | [`logistische_linearisierung`](hm2_all_in_one.py#L2114) | `stuetzstellen, stuetzwerte, kapazitaet_k` | AusgleichsErgebnis | Linearisiert ein logistisches Wachstum bei bekannter Kapazitaet. | - |
 
-### Interpolation
+## Interpolation
 <a id="interpolationpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -210,7 +173,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`spline_abschnitte_als_text`](hm2_all_in_one.py#L2337) | `koeffizienten` | list[str] | Gibt Spline-Abschnitte als Textformeln aus. | - |
 | [`spline_tabelle_erstellen`](hm2_all_in_one.py#L2356) | `koeffizienten` | pd.DataFrame | Erstellt eine Tabelle der Spline-Koeffizienten. | import pandas as pd |
 
-### Integration
+## Integration
 <a id="integrationpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -240,7 +203,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`gauss_legendre_3`](hm2_all_in_one.py#L2787) | `funktion, untere_grenze, obere_grenze` | QuadraturErgebnis | Berechnet Gauss-Legendre mit drei Stuetzpunkten. | import math |
 | [`gauss_legendre_allgemein`](hm2_all_in_one.py#L2811) | `funktion, untere_grenze, obere_grenze, anzahl_stuetzstellen` | QuadraturErgebnis | Berechnet allgemeine Gauss-Legendre-Quadratur. | - |
 
-### Differentialgleichungen und Plotting
+## Differentialgleichungen und Plotting
 <a id="differentialgleichungenpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -271,7 +234,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`lotka_volterra_system`](hm2_all_in_one.py#L3401) | `t, zustand, a=1.0, b=0.5, c=0.75, d=0.25` | Rueckgabewert gemaess Beschreibung | Wertet das Lotka-Volterra-System aus. | - |
 | [`logistisches_wachstum_mit_stoerung`](hm2_all_in_one.py#L3414) | `t, umsatz, stoer_amplitude=20` | Rueckgabewert gemaess Beschreibung | Berechnet logistisches Wachstum mit sinusfoermiger Stoerung. | import math |
 
-### Fehleranalyse
+## Fehleranalyse
 <a id="fehleranalysepy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -284,7 +247,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`lgs_absoluter_fehler_abschaetzung`](hm2_all_in_one.py#L3511) | `matrix_a, stoerung_b, norm_ord=2` | float | Schaetzt absoluten LGS-Fehler bei Stoerung in b. | - |
 | [`lgs_relativer_fehler_abschaetzung`](hm2_all_in_one.py#L3525) | `matrix_a, vektor_b, stoerung_b, norm_ord=2` | float | Schaetzt relativen LGS-Fehler. | - |
 
-### Analysis-Hilfen
+## Analysis-Hilfen
 <a id="analysis-hilfenpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -312,7 +275,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`bogenlaenge`](hm2_all_in_one.py#L3848) | `funktion, ableitung, untere_grenze, obere_grenze, numerisch=True` | float | Berechnet die Bogenlaenge eines Graphen. | import math |
 | [`mantelflaeche_rotation`](hm2_all_in_one.py#L3872) | `funktion, ableitung, untere_grenze, obere_grenze, numerisch=True` | float | Berechnet die Mantelflaeche eines Rotationskoerpers. | import math |
 
-### Daten und Tabellen
+## Daten und Tabellen
 <a id="daten-tabellenpy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
@@ -324,7 +287,7 @@ Diese Tabelle enthaelt die zentralen Ergebnis-Klassen der Toolbox.
 | [`dgl_loesungstabelle`](hm2_all_in_one.py#L3972) | `x_werte, y_werte, spaltennamen=None` | pd.DataFrame | Erstellt eine Tabelle fuer DGL-Loesungen. | import pandas as pd |
 | [`exportiere_tabelle_csv`](hm2_all_in_one.py#L3993) | `tabelle, dateiname` | None | Exportiert eine Tabelle als CSV. | import pandas as pd |
 
-### Physik-Beispiele
+## Physik-Beispiele
 <a id="physik-beispielepy"></a>
 
 | Definition | Inputs | Output | Verwendung | Extra Imports |
